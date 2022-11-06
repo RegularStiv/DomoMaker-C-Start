@@ -22,7 +22,7 @@ mongoose.connect(dbURI, (err) => {
     console.log('Could not connect to the database');
     throw err;
   }
-});
+}); 
 const redisURL = process.env.REDISCLOUD_URL || 'redis://default:Be1o3Ct0gM1zhg2EhjXhkcqpespBTa4Q@redis-15353.c99.us-east-1-4.ec2.cloud.redislabs.com:15353';
 
 const redisClient = redis.createClient({
